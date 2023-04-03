@@ -6,11 +6,7 @@ import PlacesList from "@src/components/PlacesList";
 type Props = {};
 
 const AllPlaces = (props: Props) => {
-  return (
-    <View>
-      <PlacesList />
-    </View>
-  );
+  return <PlacesList />;
 };
 
 export default AllPlaces;

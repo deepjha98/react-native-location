@@ -8,8 +8,9 @@ type Props = {
 };
 
 const ViewToggleBox = ({ children, conditions, alternative }: Props) => {
-  const childVisible = conditions.every(Boolean);
-  return <>{childVisible ? children : alternative ? alternative : <></>}</>;
+  const childVisible = conditions.filter(Boolean);
+
+  return <>{!!childVisible ? children : alternative ? alternative : <></>}</>;
 };
 
 export default ViewToggleBox;

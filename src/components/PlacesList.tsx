@@ -4,6 +4,7 @@ import React from "react";
 import { Place } from "@src/models/place";
 import PlaceItem from "./PlaceItem";
 import ViewToggleBox from "./ViewToggleBox";
+import { GlobalStyles } from "@src/constants/colors";
 
 type Props = { places?: Place[] };
 
@@ -38,5 +39,6 @@ const styles = StyleSheet.create({
   },
   fallbackText: {
     fontSize: 16,
+    color: GlobalStyles.colors.primary200,
   },
 });
