@@ -3,8 +3,10 @@ import { StyleSheet, Text, View } from "react-native";
 
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import FavoritePlaces from "@src/screens/FavoritePlaces";
+
+import { NavigationPath } from "@src/utils";
 import { GlobalStyles } from "@src/constants/colors";
+import AllPlaces from "@src/screens/AllPlaces";
 
 const Stack = createNativeStackNavigator();
 
@@ -20,7 +22,10 @@ export default function App() {
             },
           }}
         >
-          <Stack.Screen name="FavoritePlaces" component={FavoritePlaces} />
+          <Stack.Screen
+            name={NavigationPath.ALL_PLACES}
+            component={AllPlaces}
+          />
         </Stack.Navigator>
       </NavigationContainer>
     </>

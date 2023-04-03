@@ -1,16 +1,18 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 
+import PlacesList from "@src/components/PlacesList";
+
 type Props = {};
 
-const FavoritePlaceCard = (props: Props) => {
+const AllPlaces = (props: Props) => {
   return (
     <View>
-      <Text>FavoritePlaceCard</Text>
+      <PlacesList />
     </View>
   );
 };
 
-export default FavoritePlaceCard;
+export default AllPlaces;
 
 const styles = StyleSheet.create({});
